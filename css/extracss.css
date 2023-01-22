@@ -1,0 +1,31 @@
+/**{
+    border: 1px solid black;
+}*/
+.navbar-img{
+    width:40px;
+    height:40px;
+}
+.nav-btn{
+    width:100%;
+}
+.nav-item{
+    width:25%;
+}
+.navbar-nav{
+    width:40%;
+}
+#intro{
+    height:100%;
+}
+.navbar{
+    position: fixed;
+    z-index: 100;
+}
+.card-btn:hover, .card-btn{
+    color: #222034;
+    text-decoration: none;
+}
+.card:hover{
+    background-color: #df7126;
+    border-radius: 6px;
+}
