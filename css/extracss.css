@@ -38,3 +38,23 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
+.bg-mask{
+    background-image: url(/assets/Background-Mask.png);
+}
+#contact,#about,#projects{
+    width:85%;
+    margin:auto;
+    position: relative;
+}
+#contact,#projects{
+    margin-top: -5rem;
+}
+#projects{
+    z-index: 2;
+}
+#contact{
+    z-index: 1;
+}
+#about{
+    z-index: 3;
+}
