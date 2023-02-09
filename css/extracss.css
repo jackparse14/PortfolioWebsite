@@ -31,6 +31,7 @@
 }
 .headtext{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 40px;
 }
 body{
     background-image: url('/assets/Background-3.png');
@@ -57,4 +58,7 @@ body{
 }
 #about{
     z-index: 3;
+}
+#carousel-control-prev,#carousel-control-next{
+    z-index:100;
 }
