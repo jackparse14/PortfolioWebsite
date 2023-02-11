@@ -38,6 +38,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Varela Round', sans-serif;
 }
 .bg-mask{
     background-image: url(/assets/Background-Mask.png);
@@ -59,6 +60,9 @@ body{
 #about{
     z-index: 3;
 }
-#carousel-control-prev,#carousel-control-next{
-    z-index:100;
+.carousel-item{
+    height:600px;
+}
+.carousel-img{
+    min-height: 600px;
 }
