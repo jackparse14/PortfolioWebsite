@@ -2,15 +2,24 @@
     border: 1px solid black;
 }*/   
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 .navbar-img{
     width:40px;
     height:40px;
 }
 .nav-btn{
     width:100%;
+    font-size: 20px;
+    height:100%;
 }
-.nav-item{
-    width:25%;
+.nav-item:hover{
+    background-color: #222034;
+    
+}
+.nav-btn:hover{
+    
+    color: #df7126 !important;
+    
 }
 .navbar-nav{
     width:40%;
@@ -38,7 +47,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 .navbar-brand,.headtext,.name{
     font-family: 'Pacifico', cursive;
@@ -68,4 +78,7 @@ body{
 }
 .carousel-img{
     min-height: 600px;
+}
+.carousel-img:hover{
+    opacity: 0.8;
 }
