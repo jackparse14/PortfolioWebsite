@@ -50,7 +50,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 
 }
-.navbar-brand,.headtext,.name{
+.navbar-brand,.headtext,.name,.about-subheading{
     font-family: 'Pacifico', cursive;
 }
 .bg-mask{
