@@ -96,23 +96,22 @@
                     </div>
                 </div>
                 <div class="row">
-                    <p class="fs-5 ">I am naturally focused, hard-working, and enjoy being part of a team. I also
-                        pride myself on seeing through and finishing any task I take on. Having just finished my first
-                        year of university I am now looking toward getting an internship or part-time job within the
-                        video game industry as a way of gaining experience and improving upon my skills.
-                        Out of all my hobbies and interests video games are by far my most passionate, from the puzzle
-                        and clicker games I play on my phone to the gigantic RPGs and shooter looter games I play on my
-                        pc I have always had a love for a wide variety of video games.
+                    <p class="fs-5 ">I am a motivated, results-driven individual who thrives on tackling tasks head-on. As a dedicated team player, I bring a collaborative spirit to any workplace, working hard to achieve shared goals. My passion lies in the games industry, and I am eager to apply my skills and experience to a role in this dynamic field. With a deep interest in video games and programming, I am excited to further hone my abilities and knowledge in these areas through my career. In fact, these subjects are more than just hobbies or interests – they are my true passion. As such, I am actively seeking a job that will allow me to continue learning and growing in these fields. With a goal-oriented mindset and a thirst for knowledge, I am confident that I can contribute to any company's success while realizing my own career aspirations.
+                        
                     </p>
                 </div>
                 <div class="row pb-5 pt-4">
-                    <div class="col">
-                        <h2 class="text-center about-subheading text-decoration-underline">Qualifications</h2>
-                        <p>University of Brighton<br>Bsc(Hons) Computer Science for Games, 1st</p>
-                        <p>Free Code Camp<br><a class="text-danger" href="https://freecodecamp.org/certification/fcc97e89c04-1d3d-4bce-b4d3-0882b352e058/responsive-web-design" target="_blank">Responsive Web Design Developer Certification</a></p>
+                    <div class="col text-center">
+                        <h1 class="text-center about-subheading text-decoration-underline pb-3">Qualifications</h1>
+                            <p class="fw-bold fs-5">University of Brighton 2019-2022<br ><span class="fw-normal">Bsc(Hons) Computer Science for Games, 1st</span></p>
+                            <p class="fw-bold fs-5">Free Code Camp 2022<br><a class="text-danger fw-normal" href="https://freecodecamp.org/certification/fcc97e89c04-1d3d-4bce-b4d3-0882b352e058/responsive-web-design" target="_blank">Responsive Web Design Developer Certification</a></p>
                     </div>
-                    <div class="col">
-                        <h2 class="text-center about-subheading text-decoration-underline">Experience</h2>
+                    <div class="col text-center">
+                        <h1 class="text-center about-subheading text-decoration-underline pb-3">Experience</h1>
+                        <p class="fw-bold fs-5">Absolute Digital Solutions 2023<br><span class="fw-normal">Service Engineer Assistant</span></p>
+                        <p class="fw-bold fs-5">Ruxley Manor Garden Center Ltd 2022<br><span class="fw-normal">VR Ride Assistant</span></p>
+                        <p class="fw-bold fs-5">Whitmont Press Ltd 2018-2019<br><span class="fw-normal">Print Worker</span></p>
+                        
                     </div>
                 </div>
             </div>
@@ -188,14 +187,16 @@
                     Contact Me:</h1>
                 <div class="row justify-content-center py-5">
                     <div class="col-lg-6">
-                        <form>
+                        <form action="https://formsubmit.co/d803a85d8d0c9282a5e4b58c1e233f69" method="POST">
+                            <input type="hidden" name="_subject" value="New email from portfolio website">
+                            <input type="hidden" name="_next" value="/html/thankyou.html">
                             <label for="email" class="form-label fw-bold">Email Address:</label>
                             <div class="mb-4 input-group">
                                 <span class="input-group-text bg-warning border border-1 border-danger rounded-left">
                                     <i class="bi bi-envelope-fill text-danger"></i>
                                 </span>
                                 <input type="email" class="form-control border border-1 border-danger rounded-right"
-                                    id="email" placeholder="e.g jack@example.com">
+                                    id="email" placeholder="e.g jack@example.com" name="email" required/>
                             </div>
 
                             <label for="name" class="form-label fw-bold">Name:</label>
@@ -204,14 +205,12 @@
                                     <i class="bi bi-person-fill text-danger"></i>
                                 </span>
                                 <input type="text" class="form-control border border-1 border-danger rounded-right"
-                                    id="name" placeholder="e.g. Jack">
+                                    id="name" placeholder="e.g. Jack" name="name" required/>
                             </div>
 
                             <label for="message" class="form-label fw-bold">Message:</label>
                             <div class="form-group mb-4">
-                                <textarea class="form-control border border-1 border-danger" id="message"
-                                    placeholder="Type your message here..."
-                                    style="min-height: 140px; max-height: 280px;"></textarea>
+                                <textarea class="form-control border border-1 border-danger" id="message" placeholder="Type your message here..." style="min-height: 140px; max-height: 280px;" name="message" required></textarea>
                             </div>
                             <div class="text-center">
                                 <button type="submit"
