@@ -27,6 +27,9 @@
 #intro{
     height:100%;
 }
+.ty-link:hover{
+    color: #222034 !important;
+}
 .navbar{
     position: fixed;
     z-index: 100;
@@ -84,4 +87,7 @@ body{
 }
 .carousel-img:hover{
     opacity: 0.8;
+}
+.ty-lh{
+    line-height: 65px;
 }
