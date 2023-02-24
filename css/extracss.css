@@ -75,10 +75,15 @@ body{
     z-index: 3;
 }
 .carousel-item{
-    height:600px;
+    height: 50vw;
+    min-height:300px;
+    max-height: 600px;
 }
 .carousel-img{
-    min-height: 600px;
+    height: 50vw;
+    min-height: 300px;
+    max-height: 600px;
+    object-fit: cover;
 }
 .carousel-img:hover{
     opacity: 0.8;
@@ -88,7 +93,7 @@ body{
 }
 @media(max-width: 767px){
     .nav-item{
-        border-left: none !important;
+        border-left: none !important;   
         border-right: none !important;
         border-top: 2px solid #222034;
     }
@@ -98,6 +103,9 @@ body{
     #intro{
         height:50%;
     }
+    .about-img, .about-graph{
+        width:100%;
+    }
 }
 @media(min-width: 1580px){
     #about,#projects,#contact{
@@ -105,5 +113,31 @@ body{
         margin-left:auto;
         margin-right: auto;
         max-width: none;
+    }
+}
+@media(max-width:500px) and (min-width:350px){
+    .fs-5{
+        font-size: 1rem !important;
+    }
+    .carousel-caption > p{
+        font-size: 1rem !important;
+    }
+}
+@media(max-width:550px){
+    .about-graph{
+        display: none;
+    }
+}
+@media(max-width:350px){
+    .fs-5{
+        font-size: 0.75rem !important;
+    }
+    .carousel-caption > p{
+        font-size: 0.75rem !important;
+    }
+}
+@media(max-width: 932px) and (min-width: 500px){
+    .carousel-caption > p{
+        font-size: 1.1rem !important;
     }
 }
