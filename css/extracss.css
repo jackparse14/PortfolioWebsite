@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
 .navbar-img{
     width:40px;
     height:40px;
@@ -13,10 +14,20 @@
     background-color: #222034;
     
 }
-.nav-btn:hover{
+.nav-item:hover > .nav-btn{
     
     color: #df7126 !important;
     
+}
+.social-item:hover > .social-btn{
+    color: #df7126 !important;
+}
+.social-item:hover{
+    background-color: #222034 !important;
+}
+.form-btn:hover{
+    background-color: #222034;
+    color:#de874e !important;
 }
 #intro{
     height:100%;
@@ -40,7 +51,7 @@
     margin-top: 40px;
 }
 body{
-    background-image: url('/assets/Background-3.png');
+    background-image: url('/assets/Background-4.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

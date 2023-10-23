@@ -55,19 +55,17 @@
                             <div class="display-6 pb-4 pe-3">Software and Web Engineer</div>
                         </h1>
                         <span class="d-flex justify-content-end">
-                            <span
-                                class="bg-warning border-3 border-top border-bottom border-start border-danger rounded-start ">
-                                <a class="btn text-danger" href="https://twitter.com/jackparse14" target="_blank"><i class="bi bi-twitter fs-2"></i></a>
+                            <span class="bg-warning border-3 border-top border-bottom border-start border-danger rounded-start social-item">
+                                <a class="btn text-danger social-btn" href="https://twitter.com/jackparse14" target="_blank"><i class="bi bi-twitter fs-2"></i></a>
                             </span>
-                            <span class="bg-warning border-3 border-top border-bottom border-danger ">
-                                <a class="btn text-danger" href="https://github.com/jackparse14" target="_blank"><i class="bi bi-github fs-2"></i></a>
+                            <span class="bg-warning border-3 border-top border-bottom border-danger social-item">
+                                <a class="btn text-danger social-btn" href="https://github.com/jackparse14" target="_blank"><i class="bi bi-github fs-2"></i></a>
                             </span>
-                            <span class="bg-warning border-3 border-top border-bottom border-danger">
-                                <a class="btn text-danger" href="https://www.linkedin.com/in/jack-parsons-95bb42176/" target="_blank"><i class="bi bi-linkedin fs-2"></i></a>
+                            <span class="bg-warning border-3 border-top border-bottom border-danger social-item">
+                                <a class="btn text-danger social-btn" href="https://www.linkedin.com/in/jack-parsons-95bb42176/" target="_blank"><i class="bi bi-linkedin fs-2"></i></a>
                             </span>
-                            <span
-                                class="bg-warning border-3 border-top border-bottom border-danger rounded-end border-end">
-                                <a class="btn text-danger" href="https://www.instagram.com/jackparsecompsci/" target="_blank"><i class="bi bi-instagram fs-2"></i></a>
+                            <span class="bg-warning border-3 border-top border-bottom border-danger rounded-end border-end social-item">
+                                <a class="btn text-danger social-btn" href="https://www.instagram.com/jackparsecompsci/" target="_blank"><i class="bi bi-instagram fs-2"></i></a>
                             </span>
                         </span>
                     </div>
@@ -87,7 +85,7 @@
                     Me!</h1>
                 <div class="about-img-row row py-5 d-flex align-items-center">
                     <div class=" text-end col-md-4">
-                        <img class="about-img img-fluid rounded-end rounded-5 p-1 border-warning border-5 border"
+                        <img class="about-img img-fluid rounded-end rounded-5 p-1 border-success border-5 border"
                             src="\assets\JackSelfie.jpg" alt="Photo of Jack Parsons">
                     </div>
                     <div class=" col-md-8 " >
@@ -108,7 +106,7 @@
                     </div>
                     <div class="col text-center">
                         <h1 class="text-center about-subheading text-decoration-underline pb-3">Experience</h1>
-                        <p class="fw-bold fs-5">Absolute Digital Solutions 2023<br><span class="fw-normal">Service Engineer Assistant</span></p>
+                        <p class="fw-bold fs-5">Absolute Digital Solutions 2023<br><span class="fw-normal">Assistant Installation Engineer</span></p>
                         <p class="fw-bold fs-5">Ruxley Manor Garden Center Ltd 2022<br><span class="fw-normal">VR Ride Assistant</span></p>
                         <p class="fw-bold fs-5">Whitmont Press Ltd 2018-2019<br><span class="fw-normal">Print Worker</span></p>
                         
@@ -132,6 +130,10 @@
                                 aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
                         </div>
                         <div class="carousel-inner rounded rounded-5 border-3 border-danger border">
                             <div class="carousel-item active" data-bs-interval="500" >
@@ -164,6 +166,26 @@
 
                                 </div>
                             </div>
+                            <div class="carousel-item" data-bs-interval="500">
+                                <a href="https://github.com/jackparse14/PhaserGameAssignment" target="_blank">
+                                    <img class="carousel-img mx-auto w-100" src="/assets/PhaserGame.png"></img>
+                                </a>
+                                <div class="carousel-caption bg-primary pt-3 bg-opacity-80 rounded px-2">
+                                    <h4 class="card-title fs-5 fw-bold">Web Based Platformer</h4>
+                                    <p class="card-subtitle lead pb-2 fs-5">A platformer video game with time based scoring,<br>coded in JavaScript using Phaser Game Framework</p>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="500">
+                                <a href="https://github.com/jackparse14/CI583-HashtableAssignment" target="_blank">
+                                    <img class="carousel-img mx-auto w-100" src="/assets/HashtableSorting.png"></img>
+                                </a>
+                                <div class="carousel-caption bg-primary pt-3 bg-opacity-80 rounded px-2">
+                                    <h4 class="card-title fs-5 fw-bold">Hashtable Implementation</h4>
+                                    <p class="card-subtitle lead pb-2 fs-5">A hashtable data structure coded in Java</p>
+
+                                </div>
+                            </div>
                         </div>
                         <button class="carousel-control-prev bg-warning rounded-5 rounded-end border-3 border border-danger" type="button" data-bs-target="#carousel"
                             data-bs-slide="prev">
@@ -192,7 +214,7 @@
                             <input type="hidden" name="_next" value="/html/thankyou.html">
                             <label for="email" class="form-label fw-bold">Email Address:</label>
                             <div class="mb-4 input-group">
-                                <span class="input-group-text bg-warning border border-1 border-danger rounded-left">
+                                <span class="input-group-text bg-success border border-1 border-danger rounded-left">
                                     <i class="bi bi-envelope-fill text-danger"></i>
                                 </span>
                                 <input type="email" class="form-control border border-1 border-danger rounded-right"
@@ -201,7 +223,7 @@
 
                             <label for="name" class="form-label fw-bold">Name:</label>
                             <div class="input-group mb-4">
-                                <span class="input-group-text bg-warning border border-1 border-danger rounded-left">
+                                <span class="input-group-text bg-success border border-1 border-danger rounded-left">
                                     <i class="bi bi-person-fill text-danger"></i>
                                 </span>
                                 <input type="text" class="form-control border border-1 border-danger rounded-right"
@@ -214,7 +236,7 @@
                             </div>
                             <div class="text-center">
                                 <button type="submit"
-                                    class="btn btn-warning text-danger fw-bold border border-1 border-danger">Submit</button>
+                                    class="form-btn btn btn-success text-danger fw-bold border border-1 border-danger">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -230,10 +252,18 @@
                     </div>
                     <div class="col-5">
                         <span class="d-flex justify-content-end py-1">
-                            <a class="btn d-inline text-danger" href="https://twitter.com/jackparse14" target="_blank"><i class="bi bi-twitter fs-4"></i></a>
-                            <a class="btn d-inline text-danger" href="https://github.com/jackparse14" target="_blank"><i class="bi bi-github fs-4"></i></a>
-                            <a class="btn d-inline text-danger" href="https://www.linkedin.com/in/jack-parsons-95bb42176/" target="_blank"><i class="bi bi-linkedin fs-4"></i></a>
-                            <a class="btn d-inline text-danger" href="https://www.instagram.com/jackparsecompsci/" target="_blank"><i class="bi bi-instagram fs-4"></i></a>
+                            <span class="rounded social-item">
+                                <a class="btn d-inline-flex text-danger social-btn" href="https://twitter.com/jackparse14" target="_blank"><i class="bi bi-twitter fs-4"></i></a>
+                            </span>
+                            <span class="rounded social-item">
+                                <a class="btn d-inline-flex text-danger social-btn" href="https://github.com/jackparse14" target="_blank"><i class="bi bi-github fs-4"></i></a>
+                            </span>
+                            <span class="rounded social-item">
+                                <a class="btn d-inline-flex text-danger social-btn" href="https://www.linkedin.com/in/jack-parsons-95bb42176/" target="_blank"><i class="bi bi-linkedin fs-4"></i></a>
+                            </span>
+                            <span class="rounded social-item">
+                                <a class="btn d-inline-flex text-danger social-btn" href="https://www.instagram.com/jackparsecompsci/" target="_blank"><i class="bi bi-instagram fs-4"></i></a>
+                            </span>
                         </span>
                     </div>
                 </div>
