@@ -1,0 +1,49 @@
+import Phaser from "../phaser.min";
+
+let world = {
+    width:1000,
+    height:300,
+    player: null,
+    health: 3,
+    jumpButton: null,
+}
+
+export default class game_scene extends Phaser.Scene{
+    constructor(){
+        super({key:"game"})
+    }
+
+    // LOADING FUNCTIONS
+    preload (){
+        this.preloadImages();
+        this.preloadAudio();
+    }
+
+    preloadAudio(){
+
+    }
+    preloadImages(){
+    }
+
+    //BUILD FUNCTIONS
+    create(){
+        var player = new Player(this,playerDefinition.width/2,world.height-(playerDefinition.height/2));
+        this.input.mouse.disableContextMenu();
+    }
+    createPlatform(){
+        const ground = this.physics.add.staticGroup();
+
+        ground.create(400,400).setScale(2).refreshBody();
+    }
+    createControls(){
+    }
+
+    createPlayer(){
+        
+    }
+
+    //UPDATE FUNCTIONS
+    update(){
+        const pointer = this.input.activePointer;
+    }
+}

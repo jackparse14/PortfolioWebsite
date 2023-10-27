@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -9,12 +10,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="icon" type="image/png" href="/assets/Logo-2.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src = "\js\phaser.min.js"></script>
+    <script type="text/JavaScript" src = "\js\main.js"></script>
+    <script type="text/JavaScript" src = "\js\gameobjects\player.js"></script>
+    <script type="text/JavaScript" src = "\js\scenes\game_scene.js"></script>
     <title>Jack Parsons Portfolio</title>
 </head>
 
 <body class="bg-image img-fluid">
     <div class="bg-mask">
-        <div class="navbar navbar-expand-md bg-warning border-3 border-bottom border-end border-start border-danger border-2 w-100  rounded-4 rounded-top p-0">
+        <div class="navbar navbar-expand-md bg-warning border-3 border-bottom border-end border-start border-danger border-2 w-100 rounded-4 rounded-top p-0">
             <div class="container-xxl">
                 <a href="#intro" class="navbar-brand py-0">
                     <span class="align-items-center">
@@ -44,11 +49,11 @@
             </div>
 
         </div>
-        
+
         
         <section id="intro">
-            <div class="container-lg">
-                <div class="row p-5 align-items-center h-100">
+            <div class="container-lg h-100 d-flex flex-column justify-content-end align-items-center">
+                <div class="row">
                     <div class="col-md-6">
                         <h1 class="text-danger text-end intro-text bg-warning rounded-5 border border-danger border-4">
                             <div class="name display-2 pt-4 pe-3">Jack Parsons</div>
@@ -56,28 +61,28 @@
                         </h1>
                         <span class="d-flex justify-content-end">
                             <span class="bg-warning border-3 border-top border-bottom border-start border-danger rounded-start social-item">
-                                <a class="btn text-danger social-btn" href="https://twitter.com/jackparse14" target="_blank"><i class="bi bi-twitter fs-2"></i></a>
+                                <a class="btn text-danger social-btn pb-0" href="https://twitter.com/jackparse14" target="_blank"><i class="bi bi-twitter fs-2"></i></a>
                             </span>
                             <span class="bg-warning border-3 border-top border-bottom border-danger social-item">
-                                <a class="btn text-danger social-btn" href="https://github.com/jackparse14" target="_blank"><i class="bi bi-github fs-2"></i></a>
+                                <a class="btn text-danger social-btn pb-0" href="https://github.com/jackparse14" target="_blank"><i class="bi bi-github fs-2"></i></a>
                             </span>
                             <span class="bg-warning border-3 border-top border-bottom border-danger social-item">
-                                <a class="btn text-danger social-btn" href="https://www.linkedin.com/in/jack-parsons-95bb42176/" target="_blank"><i class="bi bi-linkedin fs-2"></i></a>
+                                <a class="btn text-danger social-btn pb-0" href="https://www.linkedin.com/in/jack-parsons-95bb42176/" target="_blank"><i class="bi bi-linkedin fs-2"></i></a>
                             </span>
                             <span class="bg-warning border-3 border-top border-bottom border-danger rounded-end border-end social-item">
-                                <a class="btn text-danger social-btn" href="https://www.instagram.com/jackparsecompsci/" target="_blank"><i class="bi bi-instagram fs-2"></i></a>
+                                <a class="btn text-danger social-btn pb-0" href="https://www.instagram.com/jackparsecompsci/" target="_blank"><i class="bi bi-instagram fs-2"></i></a>
                             </span>
                         </span>
                     </div>
                     <div class="col-md-6 intro-img-col">
                         <img class="img-fluid intro-img" src="\assets\Logo-2.png" alt="ebook cover">
                     </div>
-                    
+                </div>
+                <div class="row border">
+                    <div id="game-container" class="col p-0 d-flex"></div>
                 </div>
             </div>
-            
         </section>
-
 
         <section id="about" class="bg-primary text-danger rounded-5 rounded border border-5 border-danger container-xxl">
             <div class=" container-lg  pb-4">
@@ -218,7 +223,7 @@
                                     <i class="bi bi-envelope-fill text-danger"></i>
                                 </span>
                                 <input type="email" class="form-control border border-1 border-danger rounded-right"
-                                    id="email" placeholder="e.g jack@example.com" name="email" required/>
+                                    id="email" placeholder="e.g jack@example.com" name="email" required autocomplete="on"/>
                             </div>
 
                             <label for="name" class="form-label fw-bold">Name:</label>
@@ -227,7 +232,7 @@
                                     <i class="bi bi-person-fill text-danger"></i>
                                 </span>
                                 <input type="text" class="form-control border border-1 border-danger rounded-right"
-                                    id="name" placeholder="e.g. Jack" name="name" required/>
+                                    id="name" placeholder="e.g. Jack" name="name" required autocomplete="on"/>
                             </div>
 
                             <label for="message" class="form-label fw-bold">Message:</label>
@@ -253,16 +258,16 @@
                     <div class="col-5">
                         <span class="d-flex justify-content-end py-1">
                             <span class="rounded social-item">
-                                <a class="btn d-inline-flex text-danger social-btn" href="https://twitter.com/jackparse14" target="_blank"><i class="bi bi-twitter fs-4"></i></a>
+                                <a class="btn d-inline-flex text-danger social-btn pb-0" href="https://twitter.com/jackparse14" target="_blank"><i class="bi bi-twitter fs-4"></i></a>
                             </span>
                             <span class="rounded social-item">
-                                <a class="btn d-inline-flex text-danger social-btn" href="https://github.com/jackparse14" target="_blank"><i class="bi bi-github fs-4"></i></a>
+                                <a class="btn d-inline-flex text-danger social-btn pb-0" href="https://github.com/jackparse14" target="_blank"><i class="bi bi-github fs-4"></i></a>
                             </span>
                             <span class="rounded social-item">
-                                <a class="btn d-inline-flex text-danger social-btn" href="https://www.linkedin.com/in/jack-parsons-95bb42176/" target="_blank"><i class="bi bi-linkedin fs-4"></i></a>
+                                <a class="btn d-inline-flex text-danger social-btn pb-0" href="https://www.linkedin.com/in/jack-parsons-95bb42176/" target="_blank"><i class="bi bi-linkedin fs-4"></i></a>
                             </span>
                             <span class="rounded social-item">
-                                <a class="btn d-inline-flex text-danger social-btn" href="https://www.instagram.com/jackparsecompsci/" target="_blank"><i class="bi bi-instagram fs-4"></i></a>
+                                <a class="btn d-inline-flex text-danger social-btn pb-0" href="https://www.instagram.com/jackparsecompsci/" target="_blank"><i class="bi bi-instagram fs-4"></i></a>
                             </span>
                         </span>
                     </div>
