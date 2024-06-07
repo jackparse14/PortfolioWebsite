@@ -124,9 +124,6 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-/* /* .badge > * {
-  width: 100%; 
-} */
 @media (max-width: 767px) {
   .nav-item {
     border-left: none !important;
@@ -137,11 +134,20 @@ body {
     display: none;
   }
   #intro {
-    height: 50%;
+    height: 50vh;
   }
-  .about-img,
-  .about-graph {
-    width: 100%;
+  .about-img {
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+  #credentials {
+    display: flex;
+    flex-direction: column;
+  }
+  #credentials > div:first-child {
+    padding-bottom: 3rem;
   }
 }
 @media (min-width: 1580px) {
@@ -158,8 +164,8 @@ body {
   .fs-5 {
     font-size: 1rem !important;
   }
-  .carousel-caption > p {
-    font-size: 1rem !important;
+  .carousel-caption > * {
+    font-size: 0.75rem !important;
   }
 }
 @media (max-width: 550px) {
@@ -172,11 +178,11 @@ body {
     font-size: 0.75rem !important;
   }
   .carousel-caption > p {
-    font-size: 0.75rem !important;
+    font-size: 0.5rem !important;
   }
 }
 @media (max-width: 932px) and (min-width: 500px) {
-  .carousel-caption > p {
-    font-size: 1.1rem !important;
+  .carousel-caption > * {
+    font-size: 1rem !important;
   }
 }
