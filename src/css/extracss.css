@@ -114,6 +114,19 @@ body {
 .ty-lh {
   line-height: 65px;
 }
+.badge {
+  height: 15%;
+}
+#badges {
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* /* .badge > * {
+  width: 100%; 
+} */
 @media (max-width: 767px) {
   .nav-item {
     border-left: none !important;
