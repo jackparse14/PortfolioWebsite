@@ -5,28 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="stylesheet" href="/css/extracss.css">
+    <link rel="stylesheet" href="src/css/main.min.css">
+    <link rel="stylesheet" href="src/css/extracss.css">
+    <!-- Load bootstrap and icons through cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="icon" type="image/png" href="/assets/Logo-2.png">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script type="text/JavaScript" src = "\js\phaser.min.js"></script>
-    <script type="text/JavaScript" src = "\js\main.js"></script>
-    <script type="text/JavaScript" src = "\js\gameobjects\player.js"></script>
-    <script type="text/JavaScript" src = "\js\scenes\game_scene.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="src/assets/Logo-2.png">
+
     <title>Jack Parsons Portfolio</title>
 </head>
 
 <body class="bg-image img-fluid">
     <div class="bg-mask">
-        <div class="navbar navbar-expand-md bg-warning border-3 border-bottom border-end border-start border-danger border-2 w-100 rounded-4 rounded-top p-0">
+        <div
+            class="navbar navbar-expand-md bg-warning border-3 border-bottom border-end border-start border-danger border-2 w-100 rounded-4 rounded-top p-0">
             <div class="container-xxl">
                 <a href="#intro" class="navbar-brand py-0">
                     <span class="align-items-center">
                         <h4 class="text-danger pt-2">Jack Parsons</h4>
                     </span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
@@ -50,9 +52,9 @@
 
         </div>
 
-        
+
         <section id="intro">
-            <div class="container-lg h-100 d-flex flex-column justify-content-end align-items-center">
+            <div class="container-lg h-100 d-flex flex-column justify-content-center align-items-center">
                 <div class="row">
                     <div class="col-md-6">
                         <h1 class="text-danger text-end intro-text bg-warning rounded-5 border border-danger border-4">
@@ -60,22 +62,30 @@
                             <div class="display-6 pb-4 pe-3">Software and Web Engineer</div>
                         </h1>
                         <span class="d-flex justify-content-end">
-                            <span class="bg-warning border-3 border-top border-bottom border-start border-danger rounded-start social-item">
-                                <a class="btn text-danger social-btn pb-0" href="https://twitter.com/jackparse14" target="_blank"><i class="bi bi-twitter fs-2"></i></a>
+                            <span
+                                class="bg-warning border-3 border-top border-bottom border-start border-danger rounded-start social-item">
+                                <a class="btn text-danger social-btn pb-0" href="https://twitter.com/jackparse14"
+                                    target="_blank"><i class="bi bi-twitter fs-2"></i></a>
                             </span>
                             <span class="bg-warning border-3 border-top border-bottom border-danger social-item">
-                                <a class="btn text-danger social-btn pb-0" href="https://github.com/jackparse14" target="_blank"><i class="bi bi-github fs-2"></i></a>
+                                <a class="btn text-danger social-btn pb-0" href="https://github.com/jackparse14"
+                                    target="_blank"><i class="bi bi-github fs-2"></i></a>
                             </span>
                             <span class="bg-warning border-3 border-top border-bottom border-danger social-item">
-                                <a class="btn text-danger social-btn pb-0" href="https://www.linkedin.com/in/jack-parsons-95bb42176/" target="_blank"><i class="bi bi-linkedin fs-2"></i></a>
+                                <a class="btn text-danger social-btn pb-0"
+                                    href="https://www.linkedin.com/in/jack-parsons-95bb42176/" target="_blank"><i
+                                        class="bi bi-linkedin fs-2"></i></a>
                             </span>
-                            <span class="bg-warning border-3 border-top border-bottom border-danger rounded-end border-end social-item">
-                                <a class="btn text-danger social-btn pb-0" href="https://www.instagram.com/jackparsecompsci/" target="_blank"><i class="bi bi-instagram fs-2"></i></a>
+                            <span
+                                class="bg-warning border-3 border-top border-bottom border-danger rounded-end border-end social-item">
+                                <a class="btn text-danger social-btn pb-0"
+                                    href="https://www.instagram.com/jackparsecompsci/" target="_blank"><i
+                                        class="bi bi-instagram fs-2"></i></a>
                             </span>
                         </span>
                     </div>
                     <div class="col-md-6 intro-img-col">
-                        <img class="img-fluid intro-img" src="\assets\Logo-2.png" alt="ebook cover">
+                        <img class="img-fluid intro-img" src="src\assets\Logo-2.png" alt="ebook cover">
                     </div>
                 </div>
                 <div class="row border">
@@ -84,37 +94,52 @@
             </div>
         </section>
 
-        <section id="about" class="bg-primary text-danger rounded-5 rounded border border-5 border-danger container-xxl">
+        <section id="about"
+            class="bg-primary text-danger rounded-5 rounded border border-5 border-danger container-xxl">
             <div class=" container-lg  pb-4">
                 <h1 class="text-center display-1 fw-bold border-bottom border-5 border-danger pt-4 pb-2 headtext">About
                     Me!</h1>
                 <div class="about-img-row row py-5 d-flex align-items-center">
                     <div class=" text-end col-md-4">
                         <img class="about-img img-fluid rounded-end rounded-5 p-1 border-success border-5 border"
-                            src="\assets\JackSelfie.jpg" alt="Photo of Jack Parsons">
+                            src="src\assets\JackSelfie.jpg" alt="Photo of Jack Parsons">
                     </div>
-                    <div class=" col-md-8 " >
-                        <img class="about-graph img-fluid border border-primary border-5" src="\assets\Barchart-1.png"
-                            alt="Barchart of my programming skills">
+                    <div class=" col-md-8 ">
+                        <img class="about-graph img-fluid border border-primary border-5"
+                            src="src\assets\Barchart-1.png" alt="Barchart of my programming skills">
                     </div>
                 </div>
                 <div class="row">
-                    <p class="fs-5 ">I am a motivated, results-driven individual who thrives on tackling tasks head-on. As a dedicated team player, I bring a collaborative spirit to any workplace, working hard to achieve shared goals. My passion lies in the games industry, and I am eager to apply my skills and experience to a role in this dynamic field. With a deep interest in video games and programming, I am excited to further hone my abilities and knowledge in these areas through my career. In fact, these subjects are more than just hobbies or interests – they are my true passion. As such, I am actively seeking a job that will allow me to continue learning and growing in these fields. With a goal-oriented mindset and a thirst for knowledge, I am confident that I can contribute to any company's success while realizing my own career aspirations.
-                        
+                    <p class="fs-5 ">I am a motivated, results-driven individual who thrives on tackling tasks head-on.
+                        As a dedicated team player, I bring a collaborative spirit to any workplace, working hard to
+                        achieve shared goals. My passion lies in the games industry, and I am eager to apply my skills
+                        and experience to a role in this dynamic field. With a deep interest in video games and
+                        programming, I am excited to further hone my abilities and knowledge in these areas through my
+                        career. In fact, these subjects are more than just hobbies or interests – they are my true
+                        passion. As such, I am actively seeking a job that will allow me to continue learning and
+                        growing in these fields. With a goal-oriented mindset and a thirst for knowledge, I am confident
+                        that I can contribute to any company's success while realizing my own career aspirations.
+
                     </p>
                 </div>
                 <div class="row pb-5 pt-4">
                     <div class="col text-center">
                         <h1 class="text-center about-subheading text-decoration-underline pb-3">Qualifications</h1>
-                            <p class="fw-bold fs-5">University of Brighton 2019-2022<br ><span class="fw-normal">BSc(Hons) Computer Science for Games, 1st</span></p>
-                            <p class="fw-bold fs-5">Free Code Camp 2022<br><a class="text-danger fw-normal" href="https://freecodecamp.org/certification/fcc97e89c04-1d3d-4bce-b4d3-0882b352e058/responsive-web-design" target="_blank">Responsive Web Design Developer Certification</a></p>
+                        <p class="fw-bold fs-5">University of Brighton 2019-2022<br><span class="fw-normal">BSc(Hons)
+                                Computer Science for Games, 1st</span></p>
+                        <p class="fw-bold fs-5">Free Code Camp 2022<br><a class="text-danger fw-normal"
+                                href="https://freecodecamp.org/certification/fcc97e89c04-1d3d-4bce-b4d3-0882b352e058/responsive-web-design"
+                                target="_blank">Responsive Web Design Developer Certification</a></p>
                     </div>
                     <div class="col text-center">
                         <h1 class="text-center about-subheading text-decoration-underline pb-3">Experience</h1>
-                        <p class="fw-bold fs-5">Absolute Digital Solutions 2023<br><span class="fw-normal">Assistant Installation Engineer</span></p>
-                        <p class="fw-bold fs-5">Ruxley Manor Garden Center Ltd 2022<br><span class="fw-normal">VR Ride Assistant</span></p>
-                        <p class="fw-bold fs-5">Whitmont Press Ltd 2018-2019<br><span class="fw-normal">Print Worker</span></p>
-                        
+                        <p class="fw-bold fs-5">Absolute Digital Solutions 2023<br><span class="fw-normal">Assistant
+                                Installation Engineer</span></p>
+                        <p class="fw-bold fs-5">Ruxley Manor Garden Center Ltd 2022<br><span class="fw-normal">VR Ride
+                                Assistant</span></p>
+                        <p class="fw-bold fs-5">Whitmont Press Ltd 2018-2019<br><span class="fw-normal">Print
+                                Worker</span></p>
+
                     </div>
                 </div>
             </div>
@@ -126,11 +151,11 @@
                 <h1
                     class="text-center display-1 fw-bold text-danger border-bottom border-5 border-danger pt-5 pb-2 headtext">
                     My Projects</h1>
-                <div class="py-5 text-center">  
+                <div class="py-5 text-center">
                     <div id="carousel" class="d-flex carousel slide bg-primary rounded rounded-5" data-bs-ride="false">
                         <div class="carousel-indicators mb-4 ">
-                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"
@@ -141,49 +166,56 @@
                                 aria-label="Slide 5"></button>
                         </div>
                         <div class="carousel-inner rounded rounded-5 border-3 border-danger border">
-                            <div class="carousel-item active" data-bs-interval="500" >
+                            <div class="carousel-item active" data-bs-interval="500">
                                 <a href="https://github.com/jackparse14/CI601-The-Computing-Project" target="_blank">
-                                    <img class="carousel-img mx-auto w-100" src="/assets/InventorySystem.png" ></img>
+                                    <img class="carousel-img mx-auto w-100" src="src/assets/InventorySystem.png"></img>
                                 </a>
                                 <div class="carousel-caption bg-primary pt-3 bg-opacity-80 rounded px-2">
                                     <h4 class="card-title fs-5 fw-bold">Inventory System for RPGs</h4>
-                                    <p class="card-subtitle lead pb-2 fs-5">A GUI for RPGs that allows for multiple player characters,<br>coded in C# using Unity Game Engine</p>
+                                    <p class="card-subtitle lead pb-2 fs-5">A GUI for RPGs that allows for multiple
+                                        player characters,<br>coded in C# using Unity Game Engine</p>
 
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="500">
-                                <a href="https://github.com/jackparse14/CI628-MultiplayerGameDevelopment" target="_blank">
-                                    <img class="carousel-img mx-auto w-100" src="/assets/MultiplayerPong.png"></img>
+                                <a href="https://github.com/jackparse14/CI628-MultiplayerGameDevelopment"
+                                    target="_blank">
+                                    <img class="carousel-img mx-auto w-100" src="src/assets/MultiplayerPong.png"></img>
                                 </a>
                                 <div class="carousel-caption bg-primary pt-3 bg-opacity-80 rounded px-2">
                                     <h4 class="card-title fs-5 fw-bold">Multiplayer Pong</h4>
-                                    <p class="card-subtitle lead pb-2 fs-5">A game of multiplayer pong with power ups using a client server model,<br>coded in C++ and Java using FXGL Game Development Framework</p>   
+                                    <p class="card-subtitle lead pb-2 fs-5">A game of multiplayer pong with power ups
+                                        using a client server model,<br>coded in C++ and Java using FXGL Game
+                                        Development Framework</p>
 
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="500">
                                 <a href="https://github.com/jackparse14/CI517-Assignment" target="_blank">
-                                    <img class="carousel-img mx-auto w-100" src="/assets/AchievementSystem.png"></img>
+                                    <img class="carousel-img mx-auto w-100"
+                                        src="src/assets/AchievementSystem.png"></img>
                                 </a>
                                 <div class="carousel-caption bg-primary pt-3 bg-opacity-80 rounded px-2">
                                     <h4 class="card-title fs-5 fw-bold">Achievement System with Game Demo</h4>
-                                    <p class="card-subtitle lead pb-2 fs-5">An achievement game engine subsystem,<br>coded in C++ using xcube2d Game Engine based on SDL 2.0</p>
+                                    <p class="card-subtitle lead pb-2 fs-5">An achievement game engine
+                                        subsystem,<br>coded in C++ using xcube2d Game Engine based on SDL 2.0</p>
 
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="500">
                                 <a href="https://github.com/jackparse14/PhaserGameAssignment" target="_blank">
-                                    <img class="carousel-img mx-auto w-100" src="/assets/PhaserGame.png"></img>
+                                    <img class="carousel-img mx-auto w-100" src="src/assets/PhaserGame.png"></img>
                                 </a>
                                 <div class="carousel-caption bg-primary pt-3 bg-opacity-80 rounded px-2">
                                     <h4 class="card-title fs-5 fw-bold">Web Based Platformer</h4>
-                                    <p class="card-subtitle lead pb-2 fs-5">A platformer video game with time based scoring,<br>coded in JavaScript using Phaser Game Framework</p>
+                                    <p class="card-subtitle lead pb-2 fs-5">A platformer video game with time based
+                                        scoring,<br>coded in JavaScript using Phaser Game Framework</p>
 
                                 </div>
                             </div>
                             <div class="carousel-item" data-bs-interval="500">
                                 <a href="https://github.com/jackparse14/CI583-HashtableAssignment" target="_blank">
-                                    <img class="carousel-img mx-auto w-100" src="/assets/HashtableSorting.png"></img>
+                                    <img class="carousel-img mx-auto w-100" src="src/assets/HashtableSorting.png"></img>
                                 </a>
                                 <div class="carousel-caption bg-primary pt-3 bg-opacity-80 rounded px-2">
                                     <h4 class="card-title fs-5 fw-bold">Hashtable Implementation</h4>
@@ -192,13 +224,15 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev bg-warning rounded-5 rounded-end border-3 border border-danger" type="button" data-bs-target="#carousel"
-                            data-bs-slide="prev">
+                        <button
+                            class="carousel-control-prev bg-warning rounded-5 rounded-end border-3 border border-danger"
+                            type="button" data-bs-target="#carousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next bg-warning rounded-5 rounded-start border-3 border border-danger" type="button" data-bs-target="#carousel"
-                            data-bs-slide="next">
+                        <button
+                            class="carousel-control-next bg-warning rounded-5 rounded-start border-3 border border-danger"
+                            type="button" data-bs-target="#carousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -223,7 +257,8 @@
                                     <i class="bi bi-envelope-fill text-danger"></i>
                                 </span>
                                 <input type="email" class="form-control border border-1 border-danger rounded-right"
-                                    id="email" placeholder="e.g jack@example.com" name="email" required autocomplete="on"/>
+                                    id="email" placeholder="e.g jack@example.com" name="email" required
+                                    autocomplete="on" />
                             </div>
 
                             <label for="name" class="form-label fw-bold">Name:</label>
@@ -232,12 +267,14 @@
                                     <i class="bi bi-person-fill text-danger"></i>
                                 </span>
                                 <input type="text" class="form-control border border-1 border-danger rounded-right"
-                                    id="name" placeholder="e.g. Jack" name="name" required autocomplete="on"/>
+                                    id="name" placeholder="e.g. Jack" name="name" required autocomplete="on" />
                             </div>
 
                             <label for="message" class="form-label fw-bold">Message:</label>
                             <div class="form-group mb-4">
-                                <textarea class="form-control border border-1 border-danger" id="message" placeholder="Type your message here..." style="min-height: 140px; max-height: 280px;" name="message" required></textarea>
+                                <textarea class="form-control border border-1 border-danger" id="message"
+                                    placeholder="Type your message here..."
+                                    style="min-height: 140px; max-height: 280px;" name="message" required></textarea>
                             </div>
                             <div class="text-center">
                                 <button type="submit"
@@ -258,16 +295,24 @@
                     <div class="col-5">
                         <span class="d-flex justify-content-end py-1">
                             <span class="rounded social-item">
-                                <a class="btn d-inline-flex text-danger social-btn pb-0" href="https://twitter.com/jackparse14" target="_blank"><i class="bi bi-twitter fs-4"></i></a>
+                                <a class="btn d-inline-flex text-danger social-btn pb-0"
+                                    href="https://twitter.com/jackparse14" target="_blank"><i
+                                        class="bi bi-twitter fs-4"></i></a>
                             </span>
                             <span class="rounded social-item">
-                                <a class="btn d-inline-flex text-danger social-btn pb-0" href="https://github.com/jackparse14" target="_blank"><i class="bi bi-github fs-4"></i></a>
+                                <a class="btn d-inline-flex text-danger social-btn pb-0"
+                                    href="https://github.com/jackparse14" target="_blank"><i
+                                        class="bi bi-github fs-4"></i></a>
                             </span>
                             <span class="rounded social-item">
-                                <a class="btn d-inline-flex text-danger social-btn pb-0" href="https://www.linkedin.com/in/jack-parsons-95bb42176/" target="_blank"><i class="bi bi-linkedin fs-4"></i></a>
+                                <a class="btn d-inline-flex text-danger social-btn pb-0"
+                                    href="https://www.linkedin.com/in/jack-parsons-95bb42176/" target="_blank"><i
+                                        class="bi bi-linkedin fs-4"></i></a>
                             </span>
                             <span class="rounded social-item">
-                                <a class="btn d-inline-flex text-danger social-btn pb-0" href="https://www.instagram.com/jackparsecompsci/" target="_blank"><i class="bi bi-instagram fs-4"></i></a>
+                                <a class="btn d-inline-flex text-danger social-btn pb-0"
+                                    href="https://www.instagram.com/jackparsecompsci/" target="_blank"><i
+                                        class="bi bi-instagram fs-4"></i></a>
                             </span>
                         </span>
                     </div>
