@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 
+:root {
+  --warning: #df7126;
+  --success: #de874e;
+  --danger: #222034;
+}
+
 html,
 body {
   height: 100%;
@@ -16,21 +22,21 @@ body {
   height: 100%;
 }
 .nav-item:hover {
-  background-color: #222034;
+  background-color: var(--danger);
 }
 .nav-item:hover > .nav-btn {
-  color: #df7126 !important;
+  color: var(--warning) !important;
 }
 
 .social-item:hover > .social-btn {
-  color: #df7126 !important;
+  color: var(--warning) !important;
 }
 .social-item:hover {
-  background-color: #222034 !important;
+  background-color: var(--danger) !important;
 }
 .form-btn:hover {
-  background-color: #222034;
-  color: #de874e !important;
+  background-color: var(--danger);
+  color: var(--success) !important;
 }
 #intro {
   height: 100vh;
@@ -48,7 +54,7 @@ body {
   text-decoration: none;
 }
 .card:hover {
-  background-color: #df7126;
+  background-color: var(--warning);
   border-radius: 6px;
 }
 .headtext {
@@ -112,7 +118,7 @@ body {
   .nav-item {
     border-left: none !important;
     border-right: none !important;
-    border-top: 2px solid #222034;
+    border-top: 2px solid var(--danger);
   }
   .intro-img-col {
     display: none;
